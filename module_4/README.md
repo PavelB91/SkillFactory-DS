@@ -1,4 +1,5 @@
 ## Итоговое задание по Проекту 4. Компьютер говорит "Нет"
+![alt-текст](https://memegenerator.net/img/instances/82954367.jpg)
 ### 1. Описание проекта:
 1. Проект выполнен на Kaggle.
 2. Автор: [Pavel Begunov](https://www.kaggle.com/pavelbegunov).
