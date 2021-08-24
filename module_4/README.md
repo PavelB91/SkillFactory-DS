@@ -6,7 +6,7 @@
 3. [Ссылка](https://www.kaggle.com/pavelbegunov/pavel-begunov-sf-credit-scoring) на ноутбук на Kaggle.
 4. Достигнутое в соревновании значении метрики [ROC_AUC](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.roc_auc_score.html?highlight=roc_auc#sklearn.metrics.roc_auc_score):
    * Максимальное значение: 0.73650
-   * На котором решил остановиться: 0.73088
+   * На котором решил остановиться: 0.73164  
 ### 2. Цель: 
 Построить скоринговую модель предсказания дефолта клиентов банка.
 #### Задачи:
@@ -56,4 +56,8 @@
     * Различным метрикам, которые применимы к задачам классификации.
     * Подбору гиперпараметров для модели с помощью [GridSearchCV](https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.GridSearchCV.html?highlight=gridsearchcv#sklearn.model_selection.GridSearchCV).
 3. Получил максимальное значение ROC_AUC в четвертой версии ноутбука, однако все остальные метрики имели очень малые значения, что указало на слабость модели. Поэтому решил сделать модель более рабочей (шестая версия), хоть это и снизило значение метрики ROC_AUC. Но несмотря на это значения всех остальных метрик увеличились, и значимо снизилась ошибка 2 рода.
-    - *методы, которые использовались. Для Oversamling лучше всего показал себя метод **[ADASYN](https://imbalanced-learn.org/dev/references/generated/imblearn.over_sampling.ADASYN.html)**.
+4. Добавил пару исправлений в проект и доработал оформление:
+    * Вместо удаления признака car, сделал декомпозицию car и car_type, это привело к улучшению модели и увеличению значений метрик.
+    * Изменил описание некоторых функций;
+    * Добавил REDME в формате md.
+  - *методы, которые использовались. Для Oversamling лучше всего показал себя метод **[ADASYN](https://imbalanced-learn.org/dev/references/generated/imblearn.over_sampling.ADASYN.html)**.
